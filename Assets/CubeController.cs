@@ -32,6 +32,7 @@ public class CubeController : MonoBehaviour {
 		// キューブ同士の衝突か地面に衝突した時のみ効果音を鳴らす
 		if (other.gameObject.tag == "Cube" || other.gameObject.tag == "Ground") {
 			audio.volume = 1;
+			audio.Play ();
 		}
 	}
 }
